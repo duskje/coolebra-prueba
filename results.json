@@ -1,0 +1,70 @@
+[
+    {
+        "0": [
+            {
+                "product_name": "tritito",
+                "query_results": [
+                    [
+                        500,
+                        "abc",
+                        0,
+                        "tritito",
+                        "manta isabel"
+                    ]
+                ],
+                "markets": [
+                    "manta isabel"
+                ],
+                "price_range": "500-500"
+            }
+        ]
+    },
+    {
+        "123": [
+            {
+                "product_name": "galletas mclay",
+                "query_results": [
+                    [
+                        2200,
+                        "cba",
+                        123,
+                        "galletas mclay",
+                        "dumbo"
+                    ]
+                ],
+                "markets": [
+                    "dumbo"
+                ],
+                "price_range": "2200-2200"
+            }
+        ]
+    },
+    {
+        "112233": [
+            {
+                "product_name": "lemma stone",
+                "query_results": [
+                    [
+                        600,
+                        "rgb",
+                        112233,
+                        "lemma stone",
+                        "manta isabel"
+                    ],
+                    [
+                        750,
+                        "gar",
+                        112233,
+                        "lemma stone",
+                        "dumbo"
+                    ]
+                ],
+                "markets": [
+                    "manta isabel",
+                    "dumbo"
+                ],
+                "price_range": "750-600"
+            }
+        ]
+    }
+]
