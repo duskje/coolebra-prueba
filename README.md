@@ -75,7 +75,7 @@ Si se hace la consulta periódicamente también esta tendría que sólo obtener 
 ## Pregunta 3a
 Disponible en `parte_python.py`, intenté apegarme lo máximo posible al formato del ejemplo. Asumí que el resultado de la consulta en la pregunta 1 vendría como una colección de tuplas y guardé el resultado a un JSON en `results.json` .
 
-## Pregunta 4
+## Pregunta 3b
 
 Disponible en `\frontend` y usé create-react-app, así que sería solo ejecutar `npm start`.
 
