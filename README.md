@@ -7,10 +7,10 @@ FROM price
 JOIN product on price.product_id = product.product_id
 Join market on product.market_id = market.market_id
 WHERE price.active
-ORDER By product.product_id, price.create_date DESC;
+ORDER By product.product_id, price.create_date DESC;
 ```
 
-Esto cumpliría con el caso que: 
+Esto cumpliría con el caso que si hay múltiples activos, sólo se obtenga el último activo.
 
 ### Tablas que usé para probar la consulta anterior
 ```postgresql
@@ -72,7 +72,8 @@ Algo útil podría ser obtener los precios de descuento históricos para un prod
 Si se hace la consulta periódicamente también esta tendría que sólo obtener los descuentos desde la última consulta para que no guardemos tuplas repetidas.
 
 ## Pregunta 3a
-Disponible encd
+Disponible en `parte_python.py`:
 
 ## Pregunta 4
+Disponible en `\frontend`:
 
