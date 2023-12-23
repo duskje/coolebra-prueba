@@ -10,7 +10,7 @@ WHERE price.active
 ORDER By product.product_id, price.create_date DESC;
 ```
 
-Esto cumpliría con el caso que si hay múltiples activos, sólo se obtenga el último activo.
+Asumí que podrían haber múltiples resultados con precios activos para un mismo producto, así que esta consulta cumpliría con este caso y sólo se obtenga el último precio activo.
 
 ### Tablas que usé para probar la consulta anterior
 ```postgresql
@@ -65,6 +65,7 @@ discount_price sku ean product.name market.name
 
 "750"	"gar"	"112233"	"lemma stone2"	"dumbo"
 
+Usé estos valores para los ejemplos siguientes con la diferencia que cambié el nombre del producto `lemma stone2` a `lemma stone` para que los productos con el mismo ean también tengan el mismo nombre.
 
 ## Pregunta 2
 Algo útil podría ser obtener los precios de descuento históricos para un producto, porque ahí se podría ver si es un descuento de verdad o no.
@@ -72,8 +73,9 @@ Algo útil podría ser obtener los precios de descuento históricos para un prod
 Si se hace la consulta periódicamente también esta tendría que sólo obtener los descuentos desde la última consulta para que no guardemos tuplas repetidas.
 
 ## Pregunta 3a
-Disponible en `parte_python.py`:
+Disponible en `parte_python.py`, intenté apegarme lo máximo posible al formato del ejemplo. Asumí que el resultado de la consulta en la pregunta 1 vendría como una colección de tuplas y guardé el resultado a un JSON en `results.json` .
 
 ## Pregunta 4
-Disponible en `\frontend`:
+
+Disponible en `\frontend` y usé create-react-app, así que sería solo ejecutar `npm start`.
 
